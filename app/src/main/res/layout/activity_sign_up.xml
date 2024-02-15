@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -11,23 +12,26 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="72dp"
+        android:layout_marginEnd="43dp"
         android:layout_marginBottom="35dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/asset1" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="362dp"
-        android:layout_height="96dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
+        android:layout_width="364dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="20dp"
         android:fontFamily="@font/dm_sans"
         android:text="Stay on top of your finance with us"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
         android:textFontWeight="700"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
@@ -45,6 +49,7 @@
         android:fontFamily="@font/dm_sans"
         android:text="We are your new financial Advisors to reccomend the best investments for you."
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
         android:textFontWeight="600"
         app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +63,7 @@
 
         android:layout_marginStart="44dp"
         android:layout_marginEnd="45dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="22dp"
         android:autoText="false"
         android:background="#05632F"
         android:fontFamily="@font/dm_sans"
@@ -66,25 +71,24 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="90dp"
+        android:id="@+id/textView9"
+        android:layout_width="84dp"
         android:layout_height="0dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginBottom="45dp"
+        android:background="@color/white"
         android:fontFamily="@font/dm_sans"
         android:text="Login"
         android:textAlignment="center"
         android:textColor="#31A062"
-        android:textFontWeight="600"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="@+id/appCompatButton"
         app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
 
