@@ -59,7 +59,7 @@ public class CreateAccount extends AppCompatActivity {
                     editTextName.setError("Name cannot be emptY!");
                     valid = false;
                 }
-                else if (username.contains(" ")){
+                else if (!username.contains(" ")){
                     editTextName.setError("Please enter full names");
                     valid = false;
                 }

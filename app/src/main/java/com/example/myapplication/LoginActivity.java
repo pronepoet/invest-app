@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
                     editTextUsername.setError("Username cannot be empty.");
                     valid = false;
                 }
-                else if (username.contains(" ")){
+                else if (!username.contains(" ")){
                     editTextUsername.setError("Please enter full names.");
                 }
                 else if (password.isEmpty()){
