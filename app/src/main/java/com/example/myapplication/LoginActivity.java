@@ -36,7 +36,14 @@ public class LoginActivity extends AppCompatActivity {
                 String password =   editTextPassword.getText().toString().trim();
                 String username = editTextUsername.getText().toString().trim();
                 boolean valid = true;
-                if (password.isEmpty()){
+                if (username.isEmpty()){
+                    editTextUsername.setError("Username cannot be empty.");
+                    valid = false;
+                }
+                else if (username.contains(" ")){
+                    editTextUsername.setError("Please enter full names.");
+                }
+                else if (password.isEmpty()){
                     editTextPassword.setError("Password cannot be empty");
                     valid = false;
                 }
@@ -44,10 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                     editTextPassword.setError("Password cannot be less than 8 characters");
                     valid = false;
                 }
-                else if (username.isEmpty()){
-                    editTextUsername.setError("Username cannot be empty");
-                    valid = false;
-                }
+
                 if (valid){
                     Toast.makeText(getApplicationContext(), "Creentials are valid", Toast.LENGTH_SHORT).show();
                 } else{

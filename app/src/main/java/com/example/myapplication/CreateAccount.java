@@ -56,7 +56,11 @@ public class CreateAccount extends AppCompatActivity {
                 String username = editTextName.getText().toString().trim();
                 String password = editTextPassword.getText().toString().trim();
                 if (username.isEmpty()) {
-                    editTextName.setError("Full name is required");
+                    editTextName.setError("Name cannot be emptY!");
+                    valid = false;
+                }
+                else if (username.contains(" ")){
+                    editTextName.setError("Please enter full names");
                     valid = false;
                 }
                 else if (email.isEmpty()) {
