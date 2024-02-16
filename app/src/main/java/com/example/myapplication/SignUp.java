@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.os.Bundle;
 import android.widget.TextView;
@@ -16,10 +17,19 @@ public class SignUp extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-            Intent intent= new Intent(SignUp.this, CreateAccount.class);
+            Intent intent= new Intent(SignUp.this, LoginActivity.class);
             startActivity(intent);
 
             }
         });
+        AppCompatButton appCompatButton = findViewById(R.id.appCompatButton);
+        appCompatButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(SignUp.this, CreateAccount.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

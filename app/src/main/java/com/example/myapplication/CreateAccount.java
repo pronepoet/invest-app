@@ -35,6 +35,7 @@ public class CreateAccount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (CreateAccount.this, SignUp.class);
+                startActivity(intent);
             }
         });
 
@@ -79,7 +80,7 @@ public class CreateAccount extends AppCompatActivity {
 
                 }
                 else {
-                    Toast.makeText(getApplicationContext(), "Password is valid", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
 //            //error
                 }
 
