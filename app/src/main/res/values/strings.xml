@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string-array name="plan_name">
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Platinum</item>
+    </string-array>
+
+    <string-array name="return_name">
+        <item>30% return</item>
+        <item>60% return</item>
+        <item>90% return</item>
+    </string-array>
+
+
 </resources>
