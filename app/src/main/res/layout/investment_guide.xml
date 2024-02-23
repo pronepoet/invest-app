@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+
+        android:layout_marginTop="20dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="18dp"
+
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view">
+
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="Basic type of Investments "
+        android:textColor="#4F4F4F"
+        android:textFontWeight="700"
+        android:textSize="18dp" />
+
+    <TextView
+            android:id="@+id/textView15"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/dm_sans"
+            android:text="This is how you set your foot for 2020 Stock market recession. What’s next..."
+            android:textColor="#4F4F4F"
+            android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ellipse_740" />
+
+</androidx.cardview.widget.CardView>
+
