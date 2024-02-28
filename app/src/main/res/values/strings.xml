@@ -1,18 +1,17 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string-array name="plan_name">
-        <item>Gold</item>
-        <item>Silver</item>
-        <item>Platinum</item>
-    </string-array>
 
-    <string-array name="return_name">
-        <item>30% return</item>
-        <item>60% return</item>
-        <item>90% return</item>
-    </string-array>
+    <string name="investT_1">Basic type of investments</string>
+    <string name="investT_2">How much can you start wit..</string>
+    <string name="investT_3">Basic type of investments</string>
+    <string name="investT_4">How much can you start wit..</string>
+    <string name="investT_5">Basic type of investments</string>
+
+    <string name="investD_1">This is how you set your foot for 2020 Stock market recession. What’s next...</string>
+    <string name="investD_2">What do you like to see? It’s a very different market from 2018. The way...</string>
+    <string name="investD_3">This is how you set your foot for 2020 Stock market recession. What’s next...</string>
+    <string name="investD_4">What do you like to see? It’s a very different market from 2018. The way...</string>
+    <string name="investD_5">This is how you set your foot for 2020 Stock market recession. What’s next...</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
 
 </resources>

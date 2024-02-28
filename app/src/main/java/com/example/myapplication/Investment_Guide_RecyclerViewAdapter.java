@@ -10,68 +10,29 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-//public class Investment_Guide_RecyclerViewAdapter extends RecyclerView.Adapter<Investment_Guide_RecyclerViewAdapter.MyViewHolder> {
-//    private Context context;
-//    private ArrayList<String> investments;
-//    public Investment_Guide_RecyclerViewAdapter(Context context, ArrayList<String> investments) {
-//        this.context = context;
-//        this.investments = investments;
-//    }
-//
-//
-//    @NonNull
-//    @Override
-//    public Investment_Guide_RecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-//        //inflating our layout giving look to each of our rows
-//        LayoutInflater inflater = LayoutInflater.from(context);
-//        View view = inflater.inflate(R.layout.investment_guide,parent,false);
-//        return new Investment_Guide_RecyclerViewAdapter.MyViewHolder(view);
-//    }
-//
-//
-//
-//    @Override
-//    public void onBindViewHolder(@NonNull Investment_Guide_RecyclerViewAdapter.MyViewHolder holder, int position) {
-//        //assigning values to the views we created in the recyclerview row layout file
-//        //based on the position of the recycler view
-//    holder.txtInvestmentsTitle.setText(investments.get(position));
-////  holder.txtInvestmentsDescription.setText(investments.get(position));
-////     holder.investmentsImageView.setImageResource(Integer.parseInt(investments.get(position)));
-//    }
-//
-//    @Override
-//    public int getItemCount() {
-//        // recycler view wants to know the number of items you want to display
-//        return investments.size();
-//    }
-//
-//    class MyViewHolder extends RecyclerView.ViewHolder{
-//        //grabbing the view from our recycler view row layout file
-//        //kinda looks like in the onCreate method
-//       ImageView investmentsImageView;
-//        TextView txtInvestmentsTitle,txtInvestmentsDescription;
-//
-//        public MyViewHolder(@NonNull View view) {
-//            super(view);
-////         investmentsImageView = view.findViewById(R.id.imageView3);
-//            txtInvestmentsTitle = view.findViewById(R.id.textView14);
-////       txtInvestmentsDescription = view.findViewById(R.id.textView15);
-//        }
-//    }
-//}
+import java.util.ArrayList;
+
 
 public class Investment_Guide_RecyclerViewAdapter extends RecyclerView.Adapter<Investment_Guide_RecyclerViewAdapter.MyViewHolder> {
     private Context context;
-    private String[] texts;
-    private String[] texts2;
-    private int[] images;
+//    private String[] texts;
+//    private String[] texts2;
 
-    public Investment_Guide_RecyclerViewAdapter(Context context, String[] texts, String[] texts2, int[] images) {
+
+    ArrayList<InvestmentModel> investmentArrayList;
+
+
+
+    public Investment_Guide_RecyclerViewAdapter(Context context, ArrayList<InvestmentModel>investmentArrayList) {
         this.context = context;
-        this.texts = texts;
-        this.texts2 = texts2;
-        this.images = images;
+//        this.texts = texts;
+//        this.texts2 = texts2;
+        this.investmentArrayList = investmentArrayList;
+
+
     }
+
+
 
     @NonNull
     @Override
@@ -82,15 +43,15 @@ public class Investment_Guide_RecyclerViewAdapter extends RecyclerView.Adapter<I
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.txtInvestment_description.setText(texts2[position]);
-        holder.txInvestmentTitle.setText(texts[position]);
-
-        holder.imageView.setImageResource(images[position]);
+        InvestmentModel investmentmodel = investmentArrayList.get(position);
+        holder.txtInvestment_description.setText(InvestmentModel.investmentDescription);
+        holder.txInvestmentTitle.setText(InvestmentModel.investmentTitle);
+        holder.imageView.setImageResource(InvestmentModel.image);
     }
 
     @Override
     public int getItemCount() {
-        return texts.length;
+        return investmentArrayList.size();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

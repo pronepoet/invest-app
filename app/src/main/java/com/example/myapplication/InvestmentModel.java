@@ -1,9 +1,9 @@
 package com.example.myapplication;
 
 public class InvestmentModel {
-    String investmentTitle;
-    String investmentDescription;
-    int image;
+    static String investmentTitle;
+    static String investmentDescription;
+    static int image;
 
     public InvestmentModel(String investmentTitle, String investmentDescription, int image) {
         this.investmentTitle = investmentTitle;
